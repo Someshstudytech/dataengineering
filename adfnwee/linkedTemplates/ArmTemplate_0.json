@@ -1641,6 +1641,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "Pooja"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [],
