@@ -29,7 +29,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "purchase"
+			"table": "empdata"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
