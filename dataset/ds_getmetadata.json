@@ -13,7 +13,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Employees356.csv",
+				"fileName": {
+					"value": "@concat('Sales',formatDateTime(utcNow(),'yyyy'),'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": "salesby_yyyy",
 				"fileSystem": "source"
 			},
 			"columnDelimiter": ",",

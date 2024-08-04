@@ -32,7 +32,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "newdata"
+			"table": "tblCurrentSalesDatabyYear"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
