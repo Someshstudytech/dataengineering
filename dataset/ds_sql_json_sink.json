@@ -5,6 +5,9 @@
 			"referenceName": "AzureSqlDatabase2",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "datasets_somesh"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [

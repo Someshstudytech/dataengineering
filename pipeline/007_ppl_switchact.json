@@ -380,6 +380,9 @@
 				"type": "String"
 			}
 		},
+		"folder": {
+			"name": "Pipelines_somesh"
+		},
 		"annotations": [],
 		"lastPublishTime": "2024-08-02T21:13:58Z"
 	},

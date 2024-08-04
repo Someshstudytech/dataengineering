@@ -128,13 +128,7 @@
 										"inputs": [
 											{
 												"referenceName": "ds_students_source",
-												"type": "DatasetReference",
-												"parameters": {
-													"filenme": {
-														"value": "@variables('filename')",
-														"type": "Expression"
-													}
-												}
+												"type": "DatasetReference"
 											}
 										],
 										"outputs": [
@@ -215,6 +209,9 @@
 			"filename": {
 				"type": "String"
 			}
+		},
+		"folder": {
+			"name": "Pipelines_somesh"
 		},
 		"annotations": [],
 		"lastPublishTime": "2024-08-02T21:13:58Z"

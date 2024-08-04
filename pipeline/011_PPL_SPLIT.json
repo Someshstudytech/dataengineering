@@ -23,6 +23,9 @@
 				}
 			}
 		],
+		"folder": {
+			"name": "Pipelines_somesh"
+		},
 		"annotations": []
 	}
 }

@@ -5,6 +5,9 @@
 			"referenceName": "ls_adls",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "datasets_somesh"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
