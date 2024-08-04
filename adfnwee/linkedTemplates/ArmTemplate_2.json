@@ -238,6 +238,9 @@
 						"type": "String"
 					}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"
 			},
@@ -463,6 +466,9 @@
 					"filename": {
 						"type": "String"
 					}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"
@@ -861,6 +867,9 @@
 						"type": "String"
 					}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"
 			},
@@ -990,6 +999,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": []
 			},
 			"dependsOn": []
@@ -1107,6 +1119,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": []
 			},
 			"dependsOn": []
@@ -1196,6 +1211,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": []
 			},
@@ -1493,6 +1511,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": []
 			},
 			"dependsOn": []
@@ -1521,6 +1542,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": []
 			},
@@ -1630,6 +1654,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": []
 			},
@@ -2447,6 +2474,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": []
 			},

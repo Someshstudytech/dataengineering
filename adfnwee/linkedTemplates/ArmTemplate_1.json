@@ -21,6 +21,9 @@
 					"referenceName": "ls_adls",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "Json",
 				"typeProperties": {
@@ -1358,6 +1361,9 @@
 					"referenceName": "AzureSqlDatabase2",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1399,6 +1405,9 @@
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1436,6 +1445,9 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -1475,6 +1487,9 @@
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1512,6 +1527,9 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -1551,6 +1569,9 @@
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -1588,6 +1609,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1636,6 +1660,9 @@
 					"filename": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -1759,6 +1786,9 @@
 					"Name": {
 						"type": "String"
 					}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"
@@ -1909,6 +1939,9 @@
 						"type": "String"
 					}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"
 			},
@@ -2052,6 +2085,9 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pipelines_somesh"
 				},
 				"annotations": [],
 				"lastPublishTime": "2024-08-02T21:13:58Z"

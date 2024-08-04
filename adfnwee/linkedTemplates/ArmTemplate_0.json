@@ -464,6 +464,9 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
+				"folder": {
+					"name": "Pipelines_somesh"
+				},
 				"annotations": []
 			},
 			"dependsOn": [
@@ -524,6 +527,9 @@
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "datasets_somesh"
+				},
 				"annotations": [],
 				"type": "AzureSqlTable",
 				"schema": [
@@ -563,6 +569,9 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -608,6 +617,9 @@
 					"filename": {
 						"type": "string"
 					}
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -704,6 +716,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -821,6 +836,9 @@
 				"linkedServiceName": {
 					"referenceName": "ls_adls",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "datasets_somesh"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
