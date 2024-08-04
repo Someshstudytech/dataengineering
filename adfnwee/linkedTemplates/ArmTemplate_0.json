@@ -408,8 +408,8 @@
 					}
 				],
 				"typeProperties": {
-					"schema": "DBO",
-					"table": "TBL_NEWEMPLOYEE"
+					"schema": "dbo",
+					"table": "newdata"
 				}
 			},
 			"dependsOn": [
@@ -523,7 +523,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "Employees3.csv"
+						"fileName": "Employees356.csv",
+						"fileSystem": "source"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
