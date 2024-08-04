@@ -3469,6 +3469,9 @@
 					"referenceName": "ls_adls",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "Pooja"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -3513,6 +3516,9 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Pooja"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
@@ -4712,6 +4718,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "Pooja"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -4765,6 +4774,9 @@
 						"type": "string"
 					}
 				},
+				"folder": {
+					"name": "Pooja"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
@@ -4813,6 +4825,9 @@
 				"linkedServiceName": {
 					"referenceName": "AzureSqlDatabase1",
 					"type": "LinkedServiceReference"
+				},
+				"folder": {
+					"name": "Pooja"
 				},
 				"annotations": [],
 				"type": "AzureSqlTable",
