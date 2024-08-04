@@ -28,8 +28,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "DBO",
-			"table": "TBL_NEWEMPLOYEE"
+			"schema": "dbo",
+			"table": "newdata"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
