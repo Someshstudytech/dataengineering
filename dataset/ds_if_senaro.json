@@ -5,6 +5,9 @@
 			"referenceName": "ls_adls",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Pooja"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

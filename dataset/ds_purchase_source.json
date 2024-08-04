@@ -10,6 +10,9 @@
 				"type": "string"
 			}
 		},
+		"folder": {
+			"name": "Pooja"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
