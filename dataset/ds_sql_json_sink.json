@@ -1,36 +1,38 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "ds_sql_json_sink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase1",
+			"referenceName": "AzureSqlDatabase2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "id",
+				"name": "EmployeeKey",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "empname",
+				"name": "FirstName",
 				"type": "varchar"
 			},
 			{
-				"name": "city",
+				"name": "LastName",
 				"type": "varchar"
 			},
 			{
-				"name": "salary",
-				"type": "int",
-				"precision": 10
+				"name": "EmailAddress",
+				"type": "varchar"
+			},
+			{
+				"name": "Phone",
+				"type": "varchar"
 			}
 		],
 		"typeProperties": {
-			"schema": "DBO",
-			"table": "TBL_NEWEMPLOYEE"
+			"schema": "dbo",
+			"table": "empdata1"
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
