@@ -35,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_sqldb'"
 		},
+		"ls_sqlserverdb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sqlserverdb'"
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "sqlservcd.database.windows.net"
@@ -100,6 +104,18 @@
 			"defaultValue": "master"
 		},
 		"ls_sqldb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "somesh"
+		},
+		"ls_sqlserverdb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sqlservcd.database.windows.net"
+		},
+		"ls_sqlserverdb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqldbqy"
+		},
+		"ls_sqlserverdb_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "somesh"
 		}
@@ -2578,6 +2594,107 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/05_pipeline_storedprocedure')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Stored procedure1",
+						"type": "SqlServerStoredProcedure",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"storedProcedureName": "[[dbo].[sp_employeedata]",
+							"storedProcedureParameters": {
+								"city": {
+									"value": "MUMBAI",
+									"type": "String"
+								}
+							}
+						},
+						"linkedServiceName": {
+							"referenceName": "ls_sqlserverdb",
+							"type": "LinkedServiceReference"
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"folder": {
+					"name": "Pooja"
+				},
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/ls_sqlserverdb')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/06_pl_filterActivity')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Filter1",
+						"type": "Filter",
+						"dependsOn": [],
+						"userProperties": [],
+						"typeProperties": {
+							"items": {
+								"value": "@pipeline().parameters.Countries",
+								"type": "Expression"
+							},
+							"condition": {
+								"value": "@endswith(item(),'y')",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"Number": {
+						"type": "array",
+						"defaultValue": [
+							1,
+							2,
+							3,
+							4,
+							5,
+							6,
+							7
+						]
+					},
+					"Countries": {
+						"type": "array",
+						"defaultValue": [
+							"India",
+							"UK",
+							"US",
+							"Germany"
+						]
+					}
+				},
+				"folder": {
+					"name": "Pooja"
+				},
+				"annotations": []
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/script')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
@@ -4683,6 +4800,28 @@
 					"password": {
 						"type": "SecureString",
 						"value": "[parameters('ls_sqldb_password')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ls_sqlserverdb')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AmazonRdsForSqlServer",
+				"typeProperties": {
+					"server": "[parameters('ls_sqlserverdb_properties_typeProperties_server')]",
+					"database": "[parameters('ls_sqlserverdb_properties_typeProperties_database')]",
+					"encrypt": "mandatory",
+					"trustServerCertificate": false,
+					"authenticationType": "SQL",
+					"userName": "[parameters('ls_sqlserverdb_properties_typeProperties_userName')]",
+					"password": {
+						"type": "SecureString",
+						"value": "[parameters('ls_sqlserverdb_password')]"
 					}
 				}
 			},

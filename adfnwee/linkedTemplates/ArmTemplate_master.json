@@ -35,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_sqldb'"
 		},
+		"ls_sqlserverdb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sqlserverdb'"
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "sqlservcd.database.windows.net"
@@ -103,6 +107,18 @@
 			"type": "string",
 			"defaultValue": "somesh"
 		},
+		"ls_sqlserverdb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sqlservcd.database.windows.net"
+		},
+		"ls_sqlserverdb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqldbqy"
+		},
+		"ls_sqlserverdb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "somesh"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -150,6 +166,9 @@
 					},
 					"ls_sqldb_password": {
 						"value": "[parameters('ls_sqldb_password')]"
+					},
+					"ls_sqlserverdb_password": {
+						"value": "[parameters('ls_sqlserverdb_password')]"
 					},
 					"AzureSqlDatabase1_properties_typeProperties_server": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
@@ -201,6 +220,15 @@
 					},
 					"ls_sqldb_properties_typeProperties_userName": {
 						"value": "[parameters('ls_sqldb_properties_typeProperties_userName')]"
+					},
+					"ls_sqlserverdb_properties_typeProperties_server": {
+						"value": "[parameters('ls_sqlserverdb_properties_typeProperties_server')]"
+					},
+					"ls_sqlserverdb_properties_typeProperties_database": {
+						"value": "[parameters('ls_sqlserverdb_properties_typeProperties_database')]"
+					},
+					"ls_sqlserverdb_properties_typeProperties_userName": {
+						"value": "[parameters('ls_sqlserverdb_properties_typeProperties_userName')]"
 					}
 				}
 			},

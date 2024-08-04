@@ -26,6 +26,9 @@
 		"ls_sqldb_password": {
 			"value": ""
 		},
+		"ls_sqlserverdb_password": {
+			"value": ""
+		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "sqlservcd.database.windows.net"
 		},
@@ -75,6 +78,15 @@
 			"value": "master"
 		},
 		"ls_sqldb_properties_typeProperties_userName": {
+			"value": "somesh"
+		},
+		"ls_sqlserverdb_properties_typeProperties_server": {
+			"value": "sqlservcd.database.windows.net"
+		},
+		"ls_sqlserverdb_properties_typeProperties_database": {
+			"value": "sqldbqy"
+		},
+		"ls_sqlserverdb_properties_typeProperties_userName": {
 			"value": "somesh"
 		},
 		"containerUri": {
