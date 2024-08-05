@@ -133,7 +133,17 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@activity('Script1').output",
+								"type": "Expression"
+							},
+							"schema": {
+								"value": "@activity('Script1').output.pipelineReturnValue",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}

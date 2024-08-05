@@ -112,7 +112,17 @@
 							"outputs": [
 								{
 									"referenceName": "AzureSqlTable1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@activity('Get Metadata1').output",
+											"type": "Expression"
+										},
+										"schema": {
+											"value": "@activity('Get Metadata1').output.pipelineReturnValue",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}

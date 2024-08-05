@@ -40,13 +40,33 @@
 				"inputs": [
 					{
 						"referenceName": "ds_sqltb",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().DataFactory",
+								"type": "Expression"
+							},
+							"schema": {
+								"value": "@pipeline().Pipeline",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().DataFactory",
+								"type": "Expression"
+							},
+							"schema": {
+								"value": "@pipeline().Pipeline",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}

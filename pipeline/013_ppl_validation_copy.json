@@ -73,7 +73,17 @@
 				"outputs": [
 					{
 						"referenceName": "AzureSqlTable1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@activity('Validation1').output",
+								"type": "Expression"
+							},
+							"schema": {
+								"value": "@activity('Validation1').output.pipelineReturnValue",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			},
