@@ -1,19 +1,16 @@
 {
-	"name": "ds_if_source",
+	"name": "AzureSqlTable3",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1",
 			"type": "LinkedServiceReference"
 		},
-		"folder": {
-			"name": "Pooja"
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "Product"
+			"schema": "dbo",
+			"table": "SortedData"
 		}
 	}
 }

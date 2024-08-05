@@ -1,19 +1,16 @@
 {
-	"name": "ds_if_source",
+	"name": "ds_filteredDataDallas_sink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase1",
+			"referenceName": "AzureSqlDatabase2",
 			"type": "LinkedServiceReference"
-		},
-		"folder": {
-			"name": "Pooja"
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "SalesLT",
-			"table": "Product"
+			"schema": "dbo",
+			"table": "filtereddatadallas"
 		}
 	}
 }
