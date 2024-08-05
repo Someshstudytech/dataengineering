@@ -571,14 +571,8 @@
 					}
 				],
 				"typeProperties": {
-					"schema": {
-						"value": "@dataset().schema",
-						"type": "Expression"
-					},
-					"table": {
-						"value": "@dataset().filename",
-						"type": "Expression"
-					}
+					"schema": "SalesLT",
+					"table": "Customer"
 				}
 			},
 			"dependsOn": [
@@ -601,27 +595,94 @@
 				"type": "AzureSqlTable",
 				"schema": [
 					{
-						"name": "id",
+						"name": "ProductID",
 						"type": "int",
 						"precision": 10
 					},
 					{
-						"name": "name",
-						"type": "varchar"
+						"name": "Name",
+						"type": "nvarchar"
 					},
 					{
-						"name": "city",
-						"type": "varchar"
+						"name": "ProductNumber",
+						"type": "nvarchar"
 					},
 					{
-						"name": "salary",
+						"name": "Color",
+						"type": "nvarchar"
+					},
+					{
+						"name": "StandardCost",
+						"type": "money",
+						"precision": 19,
+						"scale": 4
+					},
+					{
+						"name": "ListPrice",
+						"type": "money",
+						"precision": 19,
+						"scale": 4
+					},
+					{
+						"name": "Size",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Weight",
+						"type": "decimal",
+						"precision": 8,
+						"scale": 2
+					},
+					{
+						"name": "ProductCategoryID",
 						"type": "int",
 						"precision": 10
+					},
+					{
+						"name": "ProductModelID",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "SellStartDate",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "SellEndDate",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "DiscontinuedDate",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "ThumbNailPhoto",
+						"type": "varbinary"
+					},
+					{
+						"name": "ThumbnailPhotoFileName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "rowguid",
+						"type": "uniqueidentifier"
+					},
+					{
+						"name": "ModifiedDate",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
 					}
 				],
 				"typeProperties": {
-					"schema": "dbo",
-					"table": "sales"
+					"schema": "SalesLT",
+					"table": "Customer"
 				}
 			},
 			"dependsOn": [
@@ -789,11 +850,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": {
-							"value": "@concat('Sales',formatDateTime(utcNow(),'yyyyMMdd'),'.csv')",
-							"type": "Expression"
-						},
-						"folderPath": "salesby_yyyymmdd",
+						"fileName": "Employees3.csv",
 						"fileSystem": "source"
 					},
 					"columnDelimiter": ",",

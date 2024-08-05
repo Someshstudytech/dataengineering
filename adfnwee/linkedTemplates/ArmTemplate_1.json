@@ -28,8 +28,8 @@
 				"type": "AzureSqlTable",
 				"schema": [],
 				"typeProperties": {
-					"schema": "dbo",
-					"table": "purchase_tb"
+					"schema": "SalesLT",
+					"table": "Product"
 				}
 			},
 			"dependsOn": []
