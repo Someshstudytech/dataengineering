@@ -2,8 +2,16 @@
 	"name": "AzureSqlTable1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase1",
+			"referenceName": "ls_sqlb",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			},
+			"schema": {
+				"type": "string"
+			}
 		},
 		"folder": {
 			"name": "datasets_somesh"
@@ -31,8 +39,14 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "dbo",
-			"table": "tblCurrentSalesDatabyYearmonth"
+			"schema": {
+				"value": "@dataset().schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().filename",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
