@@ -14,6 +14,9 @@
 		"LS_ADLS_to_adf_accountKey": {
 			"value": ""
 		},
+		"SqlServer1_password": {
+			"value": ""
+		},
 		"ls_adls_accountKey": {
 			"value": ""
 		},
@@ -49,6 +52,15 @@
 		},
 		"LS_ADLS_to_adf_properties_typeProperties_url": {
 			"value": "https://newstgac.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "someshasus\\SQLEXPRESS01"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "AdventureWorksLT2022"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "test"
 		},
 		"ls_adls_properties_typeProperties_url": {
 			"value": "https://newstgac.dfs.core.windows.net/"
