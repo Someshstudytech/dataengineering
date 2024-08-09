@@ -1,5 +1,5 @@
 {
-	"name": "000_ppl_exisst_transformation",
+	"name": "000_ppl_flattern_transformation",
 	"properties": {
 		"activities": [
 			{
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow7",
+						"referenceName": "dataflow5",
 						"type": "DataFlowReference"
 					},
 					"compute": {

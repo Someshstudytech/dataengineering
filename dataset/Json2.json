@@ -1,0 +1,46 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Employees.json",
+				"fileSystem": "75da"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"empid": {
+					"type": "integer"
+				},
+				"empname": {
+					"type": "string"
+				},
+				"salary": {
+					"type": "integer"
+				},
+				"phone": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"mobile": {
+								"type": "integer"
+							},
+							"home": {
+								"type": "integer"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
